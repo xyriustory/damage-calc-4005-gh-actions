@@ -19,7 +19,7 @@ jobs:
     - run: yarn install
     - name: Install JUnit coverage reporter
       run: yarn add --dev jest-junit
-    - name: Run tests with JUnit as reportere
+    - name: Run tests with JUnit as reporter
       run : npx jest --ci --runInBand --reporters=default --reporters=jest-junit
       env:
         JEST_JUNIT_OUTPUT_DIR: "./junit/test-results.xml"
