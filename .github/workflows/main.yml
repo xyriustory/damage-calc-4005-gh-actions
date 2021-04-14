@@ -25,5 +25,5 @@ jobs:
         JEST_JUNIT_OUTPUT_DIR: "./junit/test-results.xml"
     - uses: actions/upload-artifact@v2
       with:
-        parh: ./junit/test-results.xml
+        path: ./junit/test-results.xml
       if: always()
